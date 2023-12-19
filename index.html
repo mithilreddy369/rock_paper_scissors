@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div id="stats">
+        <div class="game-info">
+            <p>Total Games: <span id="totalGames">0</span></p>
+        </div>
+        <br>
+        <div class="game-results">
+            <p>
+                <span id="player1">Player 1 Wins: <span id="Player1Wins">0 (0%)</span></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id="draw">Draw: <span id="Draws">0 (0%)</span></span>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span id="player2">Player 2 Wins: <span id="Player2Wins">0 (0%)</span></span>
+            </p>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="half-container" id="player1Container">
+            <h2>Player 1</h2>
+            <button class="choice" onclick="makeChoice('Player1', '🪨')">🪨</button>
+            <button class="choice" onclick="makeChoice('Player1', '📄')">📄</button>
+            <button class="choice" onclick="makeChoice('Player1', '✂️')">✂️</button>
+        </div>
+        <div class="half-container" id="player2Container">
+            <h2>Player 2</h2>
+            <button class="choice" onclick="makeChoice('Player2', '🪨')">🪨</button>
+            <button class="choice" onclick="makeChoice('Player2', '📄')">📄</button>
+            <button class="choice" onclick="makeChoice('Player2', '✂️')">✂️</button>
+        </div>
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
